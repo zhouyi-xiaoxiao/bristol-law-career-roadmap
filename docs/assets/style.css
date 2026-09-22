@@ -6,3 +6,6 @@
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}@media print{body{background:white;font-size:11pt}.site-header,.sidebar,.utility-bar,.mobile-nav,#search-results,.hero-actions,.filters,.task-foot,.copy-button,.footer,.source-filter{display:none!important}.layout{display:block}.main-wrap{padding:0}.section,#start,main>section[hidden]{display:block!important;animation:none;break-before:page;padding:12px 0}.cards,.frontier-grid,.opportunity-grid,.home-grid{display:block}.card,.frontier-card,.opportunity{break-inside:avoid}.section-head h2{font-size:24pt}.frontier-card{margin:15px 0}.template-inner{display:block!important}.template-text{font-size:10pt}.source-list>li{break-inside:avoid}a{color:inherit}}
 
 .no-script-note{padding:12px 24px;background:#e5ece1;color:#183f35;font-size:14px} @media print{.opportunity[hidden],.source-list>li[hidden]{display:grid!important}}
+
+/* Chapter routing retains keyboard focus without outlining the entire article. */
+main>section[tabindex="-1"]:focus{outline:none}
