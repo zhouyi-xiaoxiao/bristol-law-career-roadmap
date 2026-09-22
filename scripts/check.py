@@ -27,3 +27,14 @@ assert '2027 年 5 月起，可回国全职实习' in raw, 'Availability was cha
 assert not any(t in raw for t in ['待课程安排确认','具体时间待课程安排确认','YOUR_TOKEN','ghp_','gho_']), 'Unexpected placeholder or private value'
 assert all((ROOT/'docs'/x).is_file() for x in ['assets/style.css','assets/app.js','assets/favicon.svg'])
 print(json.dumps({'status':'PASS','ids':len(p.ids),'links':len(p.links),'unique_external_links':len(set(a['href'] for a in p.external)),'sha256':hashlib.sha256(raw.encode()).hexdigest()},ensure_ascii=False))
+
+from datetime import date
+data=json.loads((ROOT/'src/frontier.json').read_text())
+assert len(data['items'])==6
+assert all(date(2026,7,22)<=date.fromisoformat(x['date'])<=date(2026,9,22) for x in data['items'])
+assert all(all(x.get(k) for k in ['date','url','access','limit','practice']) for x in data['items'])
+assert '<noscript>' in raw
+search=json.loads(re.search(r'<script type="application/json" id="search-data">(.*?)</script>',raw,re.S).group(1))
+assert all(x['id'] in p.ids for x in search), 'Missing search targets'
+assert len([x for x in p.ids if x.endswith('-panel')])==10
+print(json.dumps({'frontier_dates':'PASS','search_targets':len(search),'templates':10,'static_nojs_content':'PASS'}))

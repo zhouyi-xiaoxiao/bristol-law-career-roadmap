@@ -23,7 +23,7 @@ let browser;
       links: document.querySelectorAll('#sources a').length
     }));
     if (metrics.scrollWidth > width) throw new Error(`Horizontal overflow at ${width}: ${metrics.scrollWidth}`);
-    if (metrics.headings !== 11 || metrics.links < 25) throw new Error('Content is incomplete');
+    if (metrics.headings !== 12 || metrics.links < 25) throw new Error('Content is incomplete');
     if (metrics.brokenAssets) throw new Error('Broken image asset');
     results.push({ viewport: width, status: 'PASS', ...metrics });
     if ([390,1440].includes(width)) await page.screenshot({ path: path.join(evidence, `preview-${width}.png`) });
@@ -38,6 +38,7 @@ let browser;
       await page.screenshot({ path: path.join(evidence, 'mobile-recruitment.png') });
     }
   }
+  await page.locator('.sidebar a[href="#templates"]').click();
   const template = page.locator('details.template').first();
   await template.locator('summary').click();
   const copy = template.locator('[data-copy]');

@@ -1,0 +1,72 @@
+{
+  "windowStart": "2026-07-22",
+  "checkedAt": "2026-09-22",
+  "items": [
+    {
+      "id": "harvey-review",
+      "date": "2026-09-17",
+      "provider": "HARVEY",
+      "title": "多文档审查表，可以持续迭代",
+      "fact": "Harvey Agent 的 Review Table actions 已正式开放：用自然语言修改、重跑列，补入 CSV 数据或新文档，并对相关邮件和附件分组。关键变化是反复更新同一张审查表，而不是一次性摘要。",
+      "access": "商业法律产品 · 学生可借鉴方法，不默认拥有账号",
+      "practice": "拿6—10份模拟合同，整理主体、期限、责任上限、管辖、终止和原文位置。加入修订稿后再检查变化，训练多文档问题发现与逐格溯源。",
+      "limit": "保留原有权限与隔离规则；结构化单元格也可能错误。厂商公告不等于中国合同场景实测。",
+      "url": "https://www.harvey.ai/blog/review-table-agent-actions"
+    },
+    {
+      "id": "claude-docs",
+      "date": "2026-09-16",
+      "provider": "ANTHROPIC",
+      "title": "从对话，走进可编辑的交付物",
+      "fact": "Claude 宣布 Cowork 与 chat 合并，并推出 Docs / Slides：在同一对话里协作编辑文档、演示文稿，支持 PowerPoint / PDF 导出。更值得练的是研究、修改与交付在同一任务中连续进行。",
+      "access": "付费计划 beta · 合并体验先在 Pro / Max 分批推出",
+      "practice": "用同一组公开材料做两页英文 memo 和五页中文客户简报。改动一个事实后，检查两份文件的结论是否一致，保存修订理由。",
+      "limit": "Enterprise 由管理员决定；发布不代表所有账号当天可用。文件制作能力并非此时才首次出现，引用仍需逐项核对。",
+      "url": "https://claude.com/blog/cowork-is-now-claude"
+    },
+    {
+      "id": "gemini-live",
+      "date": "2026-09-15",
+      "provider": "GOOGLE · 09.17 更新",
+      "title": "实时语音，不只用来闲聊",
+      "fact": "Gemini 3.8 Live / Live Extended Thinking 介绍了实时视觉上下文、多语言切换，以及边对话边使用后台工具的能力；Extended Thinking 面向更复杂的多步任务。",
+      "access": "API、企业预览与消费端入口不同 · 逐步开放",
+      "practice": "做20分钟双语面试：2分钟陈述、10分钟追问、5分钟模拟交办、3分钟复盘。让模型追问个人贡献和证据，再自己回听表达是否准确。",
+      "limit": "可用性取决于账号、地区和订阅。语音流畅不代表法律判断或面试评分准确；录音先取得相关参与者同意。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+    },
+    {
+      "id": "openai-browser",
+      "date": "2026-08-25",
+      "provider": "OPENAI",
+      "title": "让 agent 核对网页，而不只总结网页",
+      "fact": "官方更新扩展了浏览器插件支持，包含标签页引用与浏览器控制；内置浏览器新增 WebMCP 网站工具。机会研究可以从手工复制页面，转向有边界的多步核对。",
+      "access": "按计划和模型开放 · 当日说明 WebMCP 不适用 Enterprise / Edu",
+      "practice": "限定10条律所官网链接，要求只读记录岗位、城市、截止、到岗条件、URL与查验时间。你逐一检查关键日期，再决定是否申请。",
+      "limit": "当日 WebMCP 要求 GPT-5.6 Sol / Terra 与新版桌面端，具体以当前说明为准；学校账号不等于已具备功能。不要自动发信、投递或绕过登录。",
+      "url": "https://learn.chatgpt.com/docs/changelog"
+    },
+    {
+      "id": "cocounsel-verify",
+      "date": "2026-08-20",
+      "provider": "THOMSON REUTERS",
+      "title": "检查的不是“有没有引用”，而是“能否支持结论”",
+      "fact": "新一代 CoCounsel Legal 在美国正式开放。Westlaw Brief Builder 贯通研究、论证与初稿，Deep Research Verify 检查 Westlaw / Practical Law 引用与具体法律论断的支持关系。",
+      "access": "美国 GA · 公告仅预计英国、加拿大、澳洲稍后推出",
+      "practice": "建立“命题—一手法源—精确段落—支持／反驳—法域与日期”证据表，再写备忘录。先训练引用与结论之间的可追溯关系。",
+      "limit": "不能据此说英国学生已可用，也不能推定覆盖中国法。自动核验不是零错误保证；中国问题仍回到适用的官方法源和获授权数据库。",
+      "url": "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-launches-next-generation-of-cocounsel-legal-the-ai-ecosystem-built-for-legal-professionals"
+    },
+    {
+      "id": "copilot-sharepoint",
+      "date": "2026-08-06",
+      "provider": "MICROSOFT · 更新说明",
+      "title": "从一张清单，做出可更新的工作页面",
+      "fact": "Copilot in SharePoint 八月更新介绍了从 List 生成连接底层数据的 HTML 仪表板、从 Excel / CSV 生成仪表板，以及用页面按钮触发预设提示。这里标的是更新说明日期，不是全部功能的首次发布时间。",
+      "access": "需 Microsoft 365 Copilot 许可 · 学校 M365 登录不等于授权",
+      "practice": "用公开岗位信息做可筛选追踪器，保留来源、核查日期、状态与下一步。改变两条底层数据，再验证页面显示确实随之更新。",
+      "limit": "本网站是静态资料站，只有勾选保存在本地；不是这种企业数据连接演示，也没有后台自动更新岗位。",
+      "url": "https://techcommunity.microsoft.com/blog/spblog/whats-new-in-copilot-in-sharepoint-august-2026/4535421"
+    }
+  ]
+}
